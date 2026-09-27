@@ -225,4 +225,10 @@ body::before{
 @font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-cBd.ttf') format('truetype');font-weight:700;font-display:swap}
 @font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-dEb.ttf') format('truetype');font-weight:800;font-display:swap}
 @font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-eHv.ttf') format('truetype');font-weight:900;font-display:swap}
-h1,h2{font-family:'NanumSquareNeo',sans-serif}
+.preview-heading h1,.control-title h2,.preview-card-bottom strong{font-family:'NanumSquareNeo',sans-serif}
+.preview-heading h1,.control-title h2,.preview-card-bottom strong{font-weight:800}
+.step-number{font-size:16px;font-weight:800}
+.part-index{font-size:13px;font-weight:800}
+.font-count{font-size:12px;font-weight:800}
+.part-option{align-items:baseline}
+.part-index{align-self:auto;margin-top:0;line-height:1}
