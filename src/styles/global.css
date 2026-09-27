@@ -99,3 +99,106 @@
   .topbar-center{font-size:8px}
   .color-name{font-size:10px}
 }
+
+/* Pink and violet desktop-sticker inspired theme. */
+:root{
+  color:#493653;
+  background:#faedf6;
+  --ink:#493653;
+  --muted:#927ba1;
+  --line:#e8cde2;
+  --paper:#fff8fc;
+  --rose:#eb82ad;
+}
+body{
+  color:#493653;
+  background-color:#faedf6;
+  background-image:
+    radial-gradient(ellipse at 16% 12%,#f7c6dc99 0,transparent 29%),
+    radial-gradient(ellipse at 86% 25%,#d8c1f399 0,transparent 30%),
+    linear-gradient(135deg,#fff2f8 0%,#f8eefa 56%,#f2e8ff 100%);
+  background-attachment:fixed;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.58;
+  background-image:linear-gradient(#8a69a51c 1px,transparent 1px),linear-gradient(90deg,#8a69a51c 1px,transparent 1px);
+  background-size:24px 24px;
+}
+.app-shell{position:relative;z-index:1}
+.topbar{border-color:#9873a844}
+.topbar-center{
+  padding:9px 17px;
+  border:1px solid #9c79b5;
+  border-radius:5px;
+  background:linear-gradient(100deg,#ffe4ef,#f0e3ff);
+  color:#704e8d;
+  box-shadow:inset 0 1px #fff,2px 3px 0 #76549326;
+  letter-spacing:1.2px;
+}
+.live-dot,.live-badge i{background:#e98ab4;box-shadow:0 0 0 3px #e98ab426}
+.preview-heading h1{color:#573873;font-family:Georgia,'Times New Roman',serif;font-weight:800;letter-spacing:-.8px}
+.eyebrow,.step-number{color:#9a6db2}
+.preview-card{
+  overflow:hidden;
+  border:2px solid #765493;
+  border-radius:8px;
+  background:#fff6fb;
+  box-shadow:5px 6px 0 #805d9b35,0 12px 28px #653d7020;
+}
+.preview-canvas-wrap{background-image:linear-gradient(#ac83ba1c 1px,transparent 1px),linear-gradient(90deg,#ac83ba1c 1px,transparent 1px);background-size:20px 20px}
+.preview-card-top{color:#886c99}
+.preview-card-bottom{border-color:#ead7ea;background:linear-gradient(90deg,#fff3f9,#f8f1ff)}
+.preview-card-bottom strong{color:#503d62}
+.preview-caption,.controls-footnote{color:#806f8d}
+.controls-intro{border-color:#e0c9e7}
+.controls-intro p{color:#755f83}
+.control-section{
+  margin-bottom:10px;
+  padding:17px 15px;
+  border:1px solid #dfc5e8;
+  border-left:4px solid #e991b7;
+  border-radius:7px;
+  background:#fff8fcdf;
+  box-shadow:2px 3px 0 #8965a21a;
+}
+.control-title h2{color:#503d62}
+.control-title p{color:#8e7c99}
+.font-dropdown,.font-choice,.part-option{border-color:#e3d0eb;background:#fffafd}
+.font-dropdown.open,.part-option.selected{border-color:#a77aba;background:#fff2f8}
+.font-dropdown:hover,.font-choice:hover,.font-choice.active{background:#fff1f8}
+.font-meta b,.font-choice b,.part-option>span:nth-child(2){color:#56416a}
+.font-meta small,.font-choice small,.part-option small{color:#927fa0}
+.font-groups{color:#887598}
+.font-groups i{background:#d9c6e1}
+.font-count{color:#9a81aa}
+.part-index{color:#a88ab6}
+.part-chevron,.font-check{color:#d56e9e}
+.icon-section .icon-toggle button,.icon-toggle button{border-color:#dfcbe8;background:#fffafd;color:#78648a}
+.icon-toggle button.active,.icon-section .icon-toggle button.active{border-color:#aa7abc;background:#fae9f5;color:#694881;box-shadow:0 0 0 1px #aa7abc}
+.color-section{border:1px solid #dfc5e8;border-left:4px solid #a88ad0}
+.selected-color-label{color:#a84c82}
+.color-option.selected .color-swatch{outline-color:#8c5eaa}
+.color-name{color:#756481}
+.color-option.selected .color-name{color:#563d6c}
+.controls-footnote span,.caption-star{color:#d276a5}
+.background-picker,.background-toggle button{color:#654b7a}
+.background-toggle button{border-color:#d8c4e3;background:#fff9fd}
+.background-toggle button.active{border-color:#9a70b4;background:#f4e8fa;color:#593b70;box-shadow:0 0 0 1px #9a70b4}
+.background-toggle button:last-child.active{border-color:#72527f;background:#eee4f4;color:#503d62}
+.background-swatch.light{background:#fbeaf4}
+.background-swatch.dark{background:#493b52}
+.background-toggle button:last-child.active .background-swatch{border-color:#493b52}
+.site-footer{border-color:#9873a844;color:#806b91}
+.site-footer b,.site-footer i{color:#d579a7}
+
+@media(max-width:760px){
+  .topbar-center{padding:7px 10px;border-radius:4px;letter-spacing:.7px}
+  .preview-column{background:#faedf6ed}
+  .preview-card{box-shadow:3px 4px 0 #805d9b35,0 8px 18px #653d701b}
+  .control-section{padding:15px 12px}
+}
