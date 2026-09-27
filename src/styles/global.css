@@ -202,3 +202,27 @@ body::before{
   .preview-card{box-shadow:3px 4px 0 #805d9b35,0 8px 18px #653d701b}
   .control-section{padding:15px 12px}
 }
+
+/* Keep the wallpaper colorful, but give interactive and preview surfaces a clean white base. */
+.preview-column{background:transparent}
+.preview-card{background:#fff}
+.preview-canvas-wrap{background:#fff;background-image:none}
+.preview-card-bottom{background:#fff}
+.controls-intro{padding:16px;border:1px solid #dfc5e8;border-left:4px solid #a88ad0;border-radius:7px;background:#fff;box-shadow:2px 3px 0 #8965a21a}
+.control-section{background:#fff}
+.font-dropdown,.font-choice,.part-option{background:#fff}
+.font-dropdown:hover,.font-choice:hover,.font-choice.active,.part-option.selected{background:#fff}
+.color-option{padding:5px 2px;border-radius:5px;background:#fff}
+.color-option:hover{background:#fff}
+.background-toggle button,.icon-toggle button,.icon-section .icon-toggle button{background:#fff}
+.background-toggle button.active,.icon-toggle button.active,.icon-section .icon-toggle button.active{background:#fff7fb}
+.background-toggle button:last-child.active{background:#f8f4fb}
+.preview-card-top{background:transparent}
+@media(max-width:760px){.preview-column{background:#fff}.controls-intro{padding:13px 12px}}
+
+@font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-aLt.ttf') format('truetype');font-weight:300;font-display:swap}
+@font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-bRg.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-cBd.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-dEb.ttf') format('truetype');font-weight:800;font-display:swap}
+@font-face{font-family:'NanumSquareNeo';src:url('../assets/fonts/NanumSquareNeo-eHv.ttf') format('truetype');font-weight:900;font-display:swap}
+h1,h2{font-family:'NanumSquareNeo',sans-serif}
