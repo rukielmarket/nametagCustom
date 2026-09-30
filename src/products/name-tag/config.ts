@@ -18,6 +18,6 @@ export const nameTagParts: PartDefinition[] = [
 ];
 export const nameTagProduct: ProductDefinition = {
   id: 'name-tag', name: '커스텀 네임택', description: '나만의 컬러 조합을 미리 확인해 보세요.',
-  fonts: nameTagFonts, parts: nameTagParts, colors: ['pink', 'yellow', 'cyan', 'mint', 'brown', 'lavender', 'white'],
+  fonts: nameTagFonts, parts: nameTagParts, colors: ['red', 'pink', 'yellow', 'cyan', 'mint', 'green', 'brown', 'lavender', 'white'],
   models: nameTagFonts.map((font) => ({ id: font.id, label: font.label, fontId: font.id, path: `/models/name-tag/${font.id}.glb?v=2`, parts: nameTagParts })),
 };
